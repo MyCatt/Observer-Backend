@@ -803,7 +803,7 @@
             {
               "description": "Workflow History2",
               "type": "xpath",
-              "path":  "//button[@aria-label='*[text()='Workflow history']",
+              "path":  "//button[@aria-label='*[text()='Workflow history']]",
               "attribute": "@value",
               "match": "exact",
               "value": "TEMPLATE.field",
