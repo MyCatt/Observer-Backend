@@ -801,15 +801,6 @@
               "mutators": ["normalize-space", "lower-case"]
             },
             {
-              "description": "Workflow History2",
-              "type": "xpath",
-              "path":  "//button[@aria-label='*[text()='Workflow history']]",
-              "attribute": "@value",
-              "match": "exact",
-              "value": "TEMPLATE.field",
-              "mutators": ["normalize-space", "lower-case"]
-            },
-            {
               "description": "Workflow History3",
               "type": "xpath",
               "path":  "//button[contains(@aria-label,'w history')]",
