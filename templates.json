@@ -48,7 +48,7 @@
             {
              "description": "Dimensions input",
               "type": "xpath",
-              "path": "//span[TEMPLATE.value]/..//input[contains(@aria-label, 'value')]",
+              "path": "//label[TEMPLATE.value value]/..//input[contains(@aria-label, 'value')]",
               "attribute": "text()",
               "match": "exact",
               "value": "TEMPLATE.field",
