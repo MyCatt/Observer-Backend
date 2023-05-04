@@ -22,14 +22,14 @@
         "Listbox": "exact:Listbox"
     },
     "readableLayouts" : {
-        "Section": "LAYOUT.name Section",
-        "Grid": "LAYOUT.name Grid",
-        "SideForm": "LAYOUT.name Dialog",
-        "Dialog": "LAYOUT.name Dialog",
-        "ActionPane": "ActionPane",
-        "ActionPaneShadow": "ActionPane Flyout",
-        "Popup": "Lookup Form",
-        "SysBoxForm": "SysBoxForm",
-        "Listbox": "List box"
+        "Section": "Generic - LAYOUT.name Section",
+        "Grid": "Generic - LAYOUT.name Grid",
+        "SideForm": "Generic - LAYOUT.name Form",
+        "Dialog": "Generic - LAYOUT.name Form",
+        "ActionPane": "Generic - Menu Interaction",
+        "ActionPaneShadow": "Generic - Menu Interaction",
+        "Popup": "Generic - Lookup Grid",
+        "SysBoxForm": "Generic - Alert Box",
+        "Listbox": "Generic - Dropdown List"
     }
 }
