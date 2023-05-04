@@ -337,9 +337,17 @@
               "match": "exact",
               "value": "TEMPLATE.field",
               "mutators": ["normalize-space", "lower-case"]
-            },
+            }
+          ],
+          "postfix": "menu",
+          "prefix": "",
+          "exact": ""
+        },
+         {
+          "name": "Close Warning",
+          "paths": [
              {
-              "description": "Menu button2",
+              "description": "close warnings",
               "type": "xpath",
               "path": "//button[@data-dyn-controlname='MessageBarClose' and TEMPLATE.value]",
               "attribute": "@aria-label",
@@ -348,7 +356,7 @@
               "mutators": ["normalize-space", "lower-case"]
             }
           ],
-          "postfix": "menu",
+          "postfix": "close warning",
           "prefix": "",
           "exact": ""
         },
