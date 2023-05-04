@@ -1,0 +1,35 @@
+{
+    "layoutPaths": {
+        "Section": "//div[@data-dyn-role='Section']//div[@role='heading']//button[text()]//ancestor::div[@data-dyn-role='SectionPage']",
+        "Grid": "//div[@role='region'][descendant-or-self::h1/span[text()]]//div[@role='grid'][not(.//ancestor::*[contains(@style, 'display: none')])]",
+        "SideForm": "//div[@data-dyn-role='Dialog']//div[@role='heading']/ancestor::div[@data-dyn-role='Dialog']//div[@data-dyn-controlname='MainGroup']",
+        "Dialog": "//div[@data-dyn-role='Dialog']",
+        "SysBoxForm": "//div[@data-dyn-form-name='SysBoxForm']",
+        "ActionPane": "//div[@data-dyn-role='AppBarSection']",
+        "ActionPaneShadow": "//div[contains(@class, 'sysPopup') and @role='menu']",
+        "Popup": "//form[@data-dyn-role='Popup']",
+        "Listbox": "//ul[@role='listbox']"
+    },
+    "textPath" : {
+        "Section": "//div[@role='heading']//button[text()]",
+        "Grid": "//ancestor-or-self::div[@role='region']//span[@class='formCaption'][text()]",
+        "SideForm": "//div[@data-dyn-role='Dialog']//div[@role='heading']",
+        "Dialog": "//div[contains(@class, 'dialog-header')]//div[@role='heading']",
+        "ActionPane": "exact:Generic",
+        "ActionPaneShadow": "exact:Shadow",
+        "Popup": "exact:Lookup Form",
+        "SysBoxForm": "exact:SysBoxForm",
+        "Listbox": "exact:Listbox"
+    },
+    "readableLayouts" : {
+        "Section": "LAYOUT.name Section",
+        "Grid": "LAYOUT.name Grid",
+        "SideForm": "LAYOUT.name Dialog",
+        "Dialog": "LAYOUT.name Dialog",
+        "ActionPane": "ActionPane",
+        "ActionPaneShadow": "ActionPane Flyout",
+        "Popup": "Lookup Form",
+        "SysBoxForm": "SysBoxForm",
+        "Listbox": "List box"
+    }
+}
