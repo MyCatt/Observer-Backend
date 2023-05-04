@@ -332,8 +332,17 @@
             {
               "description": "Menu button",
               "type": "xpath",
-              "path": "//div[@role='menu' or @class='appBarTab-content' or @class='appBar-toolbar']//button[descendant-or-self::*[text()='TEMPLATE.value']] | //button[@data-dyn-controlname='MessageBarClose' and @aria-label='TEMPLATE.value']",
+              "path": "//div[@role='menu' or @class='appBarTab-content' or @class='appBar-toolbar']//button[descendant-or-self::*[TEMPLATE.value]]",
               "attribute": "text()",
+              "match": "exact",
+              "value": "TEMPLATE.field",
+              "mutators": ["normalize-space", "lower-case"]
+            },
+             {
+              "description": "Menu button2",
+              "type": "xpath",
+              "path": "//button[@data-dyn-controlname='MessageBarClose' and TEMPLATE.value]",
+              "attribute": "@aria-label",
               "match": "exact",
               "value": "TEMPLATE.field",
               "mutators": ["normalize-space", "lower-case"]
