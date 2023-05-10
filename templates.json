@@ -387,55 +387,6 @@
           "exact": ""
         },
         {
-          "name": "active rows",
-          "paths": [
-            {
-              "description": "Grid segmented active row (blue rows)",
-              "type": "xpath",
-              "path":  "(//div[@role='grid'][not(.//ancestor::*[contains(@style, 'display: none')])])[TEMPLATE.postfix]//div[@role='columnheader']//div[@data-dyn-columnname and descendant-or-self::*[TEMPLATE.value]]",
-              "attribute": "text()",
-              "match": "exact",
-              "value": "TEMPLATE.field",
-              "mutators": ["normalize-space", "lower-case"],
-              "function": "segmented_input.enter",
-              "option": "return arguments[0].closest(\"[role='grid']\").querySelector(\"[data-dyn-row-active='true']\").querySelectorAll('[data-dyn-controlname=\"' + arguments[0].getAttribute('data-dyn-columnname') + '\"]:not([data-dyn-columnname]) textarea, [data-dyn-controlname=\"' + arguments[0].getAttribute('data-dyn-columnname') + '\"]:not([data-dyn-columnname]) input[id*=segmented]')"
-            },
-            {
-              "description": "Grid linked active row (blue rows)",
-              "type": "xpath",
-              "path":  "(//div[@role='grid'][not(.//ancestor::*[contains(@style, 'display: none')])])[TEMPLATE.postfix]//div[@role='columnheader']//div[@data-dyn-columnname and descendant-or-self::*[TEMPLATE.value]]",
-              "attribute": "text()",
-              "match": "exact",
-              "value": "TEMPLATE.field",
-              "mutators": ["normalize-space", "lower-case"],
-              "function": "",
-              "option": "return arguments[0].closest(\"[role='grid']\").querySelector(\"[data-dyn-row-active='true']\").querySelectorAll('[data-dyn-controlname=\"' + arguments[0].getAttribute('data-dyn-columnname') + '\"]:not([data-dyn-columnname]) textarea, [data-dyn-controlname=\"' + arguments[0].getAttribute('data-dyn-columnname') + '\"]:not([data-dyn-columnname]) input[title*=\"Click to follow link\"]')"
-            },
-            {
-              "description": "Grid active row (blue rows)",
-              "type": "xpath",
-              "path":  "(//div[@role='grid'][not(.//ancestor::*[contains(@style, 'display: none')])])[TEMPLATE.postfix]//div[@role='columnheader']//div[@data-dyn-columnname and descendant-or-self::*[TEMPLATE.value]]",
-              "attribute": "text()",
-              "match": "exact",
-              "value": "TEMPLATE.field",
-              "mutators": ["normalize-space", "lower-case"],
-              "option": "return arguments[0].closest(\"[role='grid']\").querySelector(\"[data-dyn-row-active='true']\").querySelectorAll('[data-dyn-controlname=\"' + arguments[0].getAttribute('data-dyn-columnname') + '\"]:not([data-dyn-columnname]) textarea, [data-dyn-controlname=\"' + arguments[0].getAttribute('data-dyn-columnname') + '\"]:not([data-dyn-columnname]) input')"
-            },
-            {
-              "description": "Grid select active row (blue rows)",
-              "type": "xpath",
-              "path":  "(//div[@role='grid'][not(.//ancestor::*[contains(@style, 'display: none')])])[TEMPLATE.postfix]//div[@role=\"checkbox\"][TEMPLATE.value]",
-              "attribute": "@title",
-              "match": "exact",
-              "value": "TEMPLATE.field row",
-              "mutators": ["normalize-space", "lower-case"]
-            }
-          ],
-          "postfix": "active row",
-          "prefix": "",
-          "exact": ""
-        },
-        {
           "name": "active checkbox rows",
           "paths": [
             {
