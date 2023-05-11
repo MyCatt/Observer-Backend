@@ -6,7 +6,7 @@
         "Dialog": "//div[@data-dyn-role='Dialog']",
         "SysBoxForm": "//div[@data-dyn-form-name='SysBoxForm']",
         "ActionPane": "//div[@data-dyn-role='AppBarSection']",
-        "ActionPaneShadow": "//div[contains(@class, 'sysPopup') and @role='menu']",
+        "ActionPaneShadow": "//div[not(@data-dyn-role='ContextMenu') and contains(@class, 'sysPopup') and @role='menu']",
         "Popup": "//form[@data-dyn-role='Popup']",
         "Listbox": "//ul[@role='listbox']"
     },
