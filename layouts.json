@@ -21,7 +21,7 @@
         "Popup": "exact:Lookup Form",
         "SysBoxForm": "exact:SysBoxForm",
         "Listbox": "exact:Listbox",
-        "ColumnHeaderPopup": "//div[@data-dyn-role='ColumnHeaderPopup']//div[@class='filterField-title' and @title]"
+        "ColumnHeaderPopup": "//div[@class='filterField-title' and @title]"
     },
     "readableLayouts" : {
         "Section": "Generic - LAYOUT.name Section",
