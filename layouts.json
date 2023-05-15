@@ -33,6 +33,6 @@
         "Popup": "Generic - Lookup Grid",
         "SysBoxForm": "Generic - Alert Box",
         "Listbox": "Generic - Dropdown List",
-        "ColumnHeaderPopup": "Generic - Column Header"
+        "ColumnHeaderPopup": "Generic - Filter LAYOUT.name Column Header"
     }
 }
