@@ -9,7 +9,8 @@
         "ActionPaneShadow": "//div[not(@data-dyn-role='ContextMenu') and contains(@class, 'sysPopup') and @role='menu']",
         "Popup": "//form[@data-dyn-role='Popup']",
         "Listbox": "//ul[@role='listbox']",
-        "ColumnHeaderPopup": "//div[@data-dyn-role='ColumnHeaderPopup']"
+        "ColumnHeaderPopup": "//div[@data-dyn-role='ColumnHeaderPopup']",
+        "MenuPopup": "//form[@data-dyn-role='DropDialogPopup' and @aria-modal='true']"
     },
     "textPath" : {
         "Section": "//div[@role='heading']//button[text()]",
@@ -21,7 +22,8 @@
         "Popup": "exact:Lookup Form",
         "SysBoxForm": "exact:SysBoxForm",
         "Listbox": "exact:Listbox",
-        "ColumnHeaderPopup": "//div[@class='filterField-title' and @title]"
+        "ColumnHeaderPopup": "//div[@class='filterField-title' and @title]",
+        "MenuPopup": "//div[@role='heading']"
     },
     "readableLayouts" : {
         "Section": "Generic - LAYOUT.name Section",
@@ -33,6 +35,7 @@
         "Popup": "Generic - Lookup Grid",
         "SysBoxForm": "Generic - Alert Box",
         "Listbox": "Generic - Dropdown List",
-        "ColumnHeaderPopup": "Generic - Filter LAYOUT.name Column Header"
+        "ColumnHeaderPopup": "Generic - Filter LAYOUT.name Column Header",
+        "MenuPopup": "Generic - LAYOUT.name Popup"
     }
 }
